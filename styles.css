@@ -1,7 +1,30 @@
 body{
     font-family: 'Getu', Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .categorytitle{
     text-align: center;
 }
+
+.whitebox{
+    width: 80%;
+    margin: 0.2em auto;
+    border: 1px solid black
+
+}
+
+#slide1 {
+    background: url(assets/img/parallax1.jpg) center 0 no-repeat fixed;
+    min-height: 300px;
+ }
+ 
+ #slide2 {
+    background: url(assets/img/parallax2.jpg) center 0 no-repeat fixed;
+    min-height: 300px;
+ }
+ 
+ #slide3 {
+    background: url(assets/img/parallax3.jpg) center 0 no-repeat fixed;
+    min-height: 300px;
+ }
