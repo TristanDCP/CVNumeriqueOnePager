@@ -1,6 +1,7 @@
 body{
     font-family: 'Getu', Arial, Helvetica, sans-serif;
     margin: 0;
+    
 }
 
 .categorytitle{
@@ -47,3 +48,7 @@ body{
      text-align: right;
      text-shadow: black 2px;
  }
+
+ .checked {
+    color: orange;
+  }
