@@ -1,85 +1,103 @@
-body{
+body {
     font-family: 'Getu', Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0 0;
+    padding: 0 0;
 }
 
-.categorytitle{
+.container{
+    max-width: 100%;
+}
+
+.categorytitle {
     text-align: center;
+    text-shadow: 0px 0.5px black;
 }
 
-.whitebox{
-    width: 100%;
-    border: 0px  solid black;
-    box-shadow: black 2px 2px;
-
+#contacts{
+    text-align: center;
+    width: 80%;
+    margin: 0.2em auto;
+    border: none;
 }
-
-.categoryshadow{
-    height: max-content;
-    width: max-content;
-    box-shadow: rgba(0, 0, 0, 0.4);
-}
+/* Début Parallax */
 
 #slide1 {
     background: url(assets/img/parallax1bw.jpg) center 0 no-repeat fixed;
     min-height: 300px;
-    box-shadow: inset;
- }
- 
- #slide2 {
+    box-shadow: 0px 1px 0px 0px black inset;
+}
+
+#slide2 {
     background: url(assets/img/parallax2bw.jpg) center 0 no-repeat fixed;
     min-height: 300px;
-    box-shadow: inset;
- }
- 
- #slide3 {
+    box-shadow: 0px 1px 1px 0px black;
+}
+
+#slide3 {
     background: url(assets/img/parallax3bw.jpg) center 0 no-repeat fixed;
     min-height: 300px;
-    box-shadow: inset;
- }
-
-#headerimg{
-     background: url(assets/img/headerbw.jpg) no-repeat top center;
-     height: 500px;
-
- }
-
-#name{
-     text-align: center;
-     text-shadow: black 3px;
-     font-family: 'Gotu', Arial, Helvetica, sans-serif;
- }
- 
-#jobtitle{
-     text-align: right;
-     text-shadow: black 2px;
- }
-
- .checked {
-    color: orange;
-  }
-
-  * {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    box-shadow: 0px 1px 0px 0px black inset;
 }
 
-footer ul{
-	display: flex;
-	width: 100%;
-	height: 3rem;
-	max-width: 1000px;
-	justify-content: space-around;
+/* Fin Parallax */
+
+#headerimg {
+    background: url(assets/img/headerbw.jpg) no-repeat top center;
+    height: 500px;
+    background-size: cover;
+    box-shadow: black 2px 2px;
+    }
+
+#name {
+    
+    text-shadow: black 3px;
+    font-family: 'Gotu', Arial, Helvetica, sans-serif;
+}
+
+#jobtitle {
+    
+    text-shadow: black 2px;
+}
+
+#nameborder{
+    width: 80%;
+    border: black 1px solid;
+    margin: 0em auto;
     text-align: center;
-    background: #1E1F25;
 }
+
+.presentationtext{
+    width: 80%;
+    margin: 0.2em auto;
+    border: none;
+}
+
+.checked {
+    color: black;
+}
+
+* {
+    list-style-type: none;
+}
+
+/* Footer navbar */
+
+footer ul {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    max-width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    background: #595959;
+}
+
 footer li {
-	padding: 1rem 2rem;
+    padding: 1rem 2rem;
     text-transform: uppercase;
     cursor: pointer;
     color: #ebebeb;
-	min-width: 80px;
+    min-width: 80px;
     text-decoration: none;
 }
 
@@ -89,41 +107,49 @@ footer li:hover {
     color: white;
     animation: spring 300ms ease-out;
     text-shadow: 0 -1px 0 white;
-	font-weight: bold;
-}
-footer li:active {
-  transform: translateY(4px);
+    font-weight: bold;
 }
 
-#navbar a{
+footer li:active {
+    transform: translateY(4px);
+}
+
+#navbar{
+    margin-bottom: 0;
+}
+
+#navbar a {
     color: white;
     text-decoration: none;
     text-shadow: 2px 2px black;
+    
 }
 
 * {
     box-sizing: border-box;
-  }
-  
-  /* Set a background color */
-  body section {
+}
+
+/* Fin du footer navbar */
+/* Ici commence la timeline */
+
+body section {
     background-color: white;
     font-family: Helvetica, sans-serif;
     color: white;
-  }
-  
-  body h1{
-      color: black;
-  }
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
+}
+
+body h1 {
+    color: black;
+}
+
+.timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -132,18 +158,18 @@ footer li:active {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
+}
+
+
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -154,20 +180,21 @@ footer li:active {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+
+.right {
     left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+    
+}
+
+
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -178,10 +205,10 @@ footer li:active {
     border: medium solid black;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent black;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -192,70 +219,80 @@ footer li:active {
     border: medium solid black;
     border-width: 10px 10px 10px 0;
     border-color: transparent black transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
+}
+
+
+.right::after {
     left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+
+.content {
     padding: 20px 30px;
     background-color: black;
     position: relative;
     border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid black;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent black transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
-  }
+    box-shadow: 9px 8px 5px 0px rgba(0,0,0,0.75);
+}
 
-  @keyframes spring {
+
+@media screen and (max-width: 100%) {
+
+    .timeline::after {
+        left: 31px;
+    }
+
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+
+    .container::before {
+        left: 60px;
+        border: medium solid black;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent black transparent transparent;
+    }
+
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+
+    .right {
+        left: 0%;
+    }
+}
+
+/* Fin de la timeline */
+
+footer i{
+    text-shadow: 2px 2px black;
+}
+/* Animation navbar footer qui fait tout planter si elle est pas en bas */
+@keyframes spring {
     15% {
-      -webkit-transform-origin: center center;
-      -webkit-transform: scale(1.2, 1.1);
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.2, 1.1);
     }
+
     40% {
-      -webkit-transform-origin: center center;
-      -webkit-transform: scale(0.95, 0.95);
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(0.95, 0.95);
     }
+
     75% {
-      -webkit-transform-origin: center center;
-      -webkit-transform: scale(1.05, 1);
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.05, 1);
     }
+
     100% {
-      -webkit-transform-origin: center center;
-      -webkit-transform: scale(1, 1);
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1, 1);
     }
-  }
-  
+}
