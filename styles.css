@@ -9,8 +9,8 @@ body{
 
 .whitebox{
     width: 100%;
-    border: 0.1px solid black
-    
+    border: 0 solid black
+
 }
 
 #slide1 {
@@ -35,4 +35,15 @@ body{
      background: url(assets/img/header.jpg) no-repeat top center;
      height: 500px;
 
+ }
+
+ #name{
+     text-align: center;
+     text-shadow: black 3px;
+     font-family: 'Gotu', Arial, Helvetica, sans-serif;
+ }
+ 
+ #jobtitle{
+     text-align: right;
+     text-shadow: black 2px;
  }
