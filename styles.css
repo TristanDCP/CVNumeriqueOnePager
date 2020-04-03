@@ -8,23 +8,31 @@ body{
 }
 
 .whitebox{
-    width: 80%;
-    margin: 0.2em auto;
-    border: 1px solid black
-
+    width: 100%;
+    border: 0.1px solid black
+    
 }
 
 #slide1 {
     background: url(assets/img/parallax1.jpg) center 0 no-repeat fixed;
     min-height: 300px;
+    box-shadow: inset;
  }
  
  #slide2 {
     background: url(assets/img/parallax2.jpg) center 0 no-repeat fixed;
     min-height: 300px;
+    box-shadow: inset;
  }
  
  #slide3 {
     background: url(assets/img/parallax3.jpg) center 0 no-repeat fixed;
     min-height: 300px;
+    box-shadow: inset;
+ }
+
+ #headerimg{
+     background: url(assets/img/header.jpg) no-repeat top center;
+     height: 500px;
+
  }
